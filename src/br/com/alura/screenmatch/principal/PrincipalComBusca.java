@@ -68,7 +68,8 @@ public class PrincipalComBusca {
                 System.out.println(titulos);
             }
         }
-        FileWriter escrita = new FileWriter("filmes.txt");
+        FileWriter escrita = new FileWriter("filmes.json");
         escrita.write(gson.toJson(titulos));
+        escrita.close();
     }
 }
